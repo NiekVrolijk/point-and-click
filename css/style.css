@@ -1,0 +1,96 @@
+/* {
+    border: 1px solid #000;
+}*/
+
+body {
+    display: grid;
+    grid-template-columns: auto 800px auto;
+    grid-template-rows: auto 600px auto;
+}
+
+#title {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+#gameWindow {
+    width: 800px;
+    height: 600px;
+    background-color: #3282ad;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    position: relative;
+}
+
+#inventoryBox {
+    width: 180px;
+    height: 80px;
+    background-color: #000;
+    top: 10px;
+    left: 10px;
+}
+
+
+#dialogBox {
+    bottom: 0px;
+}
+
+#setNameDialog {
+    width: 800px;
+    height: 60px;
+    background-color: #ffffff;
+}
+
+
+#characterAvatar {
+    width: 32px;
+    height: 64px;
+    background-color: #14da1b;
+}
+
+#characterSpeach {
+    width: 300px;
+    background-color: #ffffff;
+}
+
+
+#counterSpeach {
+    width: 300px;
+    background-color: #ffffff;
+}
+
+#counterAvatar {
+    width: 32px;
+    height: 64px;
+    background-color: #cd1b1b;
+}
+
+
+#squareTest {
+    width: 64px;
+    height: 64px;
+    background-color: rgb(53, 142, 226);
+}
+
+
+#maincharacter {
+    width: 32px;
+    height: 32px;
+    background-color: #1e14da;
+}
+
+
+#tileMap {}
+
+/*background/character/forground*/
+.background {
+    position: absolute;
+}
+
+.character {
+    position: absolute;
+}
+
+.forground {
+    position: absolute;
+}
