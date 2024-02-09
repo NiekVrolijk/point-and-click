@@ -37,15 +37,17 @@ body {
 
 #setNameDialog {
     width: 800px;
-    height: 60px;
-    background-color: #ffffff;
+    height: 64px;
+    background-color: #5ba791;
 }
 
 
 #characterAvatar {
-    width: 32px;
+    width: 64px;
     height: 64px;
     background-color: #14da1b;
+    bottom: 0px;
+    left: 0px;
 }
 
 #characterSpeach {
@@ -60,9 +62,11 @@ body {
 }
 
 #counterAvatar {
-    width: 32px;
+    width: 64px;
     height: 64px;
     background-color: #cd1b1b;
+    bottom: 0px;
+    right: 0px;
 }
 
 
@@ -70,6 +74,9 @@ body {
     width: 64px;
     height: 64px;
     background-color: rgb(53, 142, 226);
+    left: 400px;
+    top: 200px;
+    opacity: 1;
 }
 
 
@@ -80,17 +87,21 @@ body {
 }
 
 
-#tileMap {}
+/*#tileMap {}*/
 
 /*background/character/forground*/
 .background {
     position: absolute;
+    z-index: 0;
 }
 
 .character {
     position: absolute;
+    z-index: 100;
+    transition: all 1s ease-in-out;
 }
 
 .forground {
     position: absolute;
+    z-index: 1000;
 }
