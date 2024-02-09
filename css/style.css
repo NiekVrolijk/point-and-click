@@ -79,6 +79,15 @@ body {
     opacity: 1;
 }
 
+#key {
+    width: 32px;
+    height: 32px;
+    background-color: rgb(197, 157, 70);
+    left: 416px;
+    top: 216px;
+    opacity: 1;
+}
+
 
 #maincharacter {
     width: 32px;
