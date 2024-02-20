@@ -11,6 +11,7 @@ const test1 = document.getElementById("squareTest");
 //inventory
 const inventoryList = document.getElementById("inventoryBox")
 
+
 gameWindow.onclick = function (e) {
     var rect = gameWindow.getBoundingClientRect();
     var x = e.clientX - rect.left;
@@ -18,8 +19,10 @@ gameWindow.onclick = function (e) {
 
     console.log("x is " + x + " and y is " + y);
 
-    mainCharacter.style.left = x - offsetCharacter + "px";
-    mainCharacter.style.top = y - offsetCharacter + "px";
+    if (e.target.id !== "maincharacterImg") {
+        mainCharacter.style.left = x - offsetCharacter + "px";
+        mainCharacter.style.top = y - offsetCharacter + "px";
+    }
 
     /*if (e.target.id == "squareTest") {
         test1.style.opacity = 0.5;
@@ -31,13 +34,29 @@ gameWindow.onclick = function (e) {
         case "squareTest":
             test1.style.opacity = 0.5;
         case "key":
-            console.log("you found key");
-            document.getElementById("key").remove();
-            //inventoryList.appendChild('<li id="inv-key><li>');
+            ShowItem("rusty key", "rustyKey")
             break
         default:
             test1.style.opacity = 1;
     }
+
+
+    function GetItem(itemName, itemId) {
+
+    }
+
+    function CheckItem() {
+
+    }
+
+    function ShowItem(itemName, itemId) {
+        console.log("you found a" + itemName);
+        const keyElement = document.createElement("li");
+        keyElement.id = itemId;
+        keyElement.innerText = itemName;
+        inventoryList.appendChild(keyElement);
+    }
+
 
 
 }

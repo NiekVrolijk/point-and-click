@@ -25,7 +25,7 @@ body {
 #inventoryBox {
     width: 180px;
     height: 80px;
-    background-color: #000;
+    background-color: #ffffff;
     top: 10px;
     left: 10px;
 }
@@ -82,9 +82,9 @@ body {
 #key {
     width: 32px;
     height: 32px;
-    background-color: rgb(197, 157, 70);
-    left: 416px;
-    top: 216px;
+    background-color: rgb(104, 80, 29);
+    left: 500px;
+    top: 250px;
     opacity: 1;
 }
 
@@ -92,7 +92,9 @@ body {
 #maincharacter {
     width: 32px;
     height: 32px;
-    background-color: #1e14da;
+    /*background-color: #1e14da;*/
+    left: 16px;
+    top: 16px;
 }
 
 
