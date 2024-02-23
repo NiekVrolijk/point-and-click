@@ -45,7 +45,7 @@ body {
 #characterAvatar {
     width: 64px;
     height: 64px;
-    background-color: #14da1b;
+    /*background-color: #14da1b;*/
     bottom: 0px;
     left: 0px;
 }
@@ -77,17 +77,41 @@ body {
     left: 400px;
     top: 200px;
     opacity: 1;
+    transition: all 1s ease-in-out;
 }
 
 #key {
     width: 32px;
     height: 32px;
-    background-color: rgb(104, 80, 29);
-    left: 500px;
-    top: 250px;
+    /*background-color: rgb(104, 80, 29);*/
+    left: 86px;
+    top: 450px;
     opacity: 1;
+    transition: all 1s ease-in-out;
 }
 
+#well {
+    width: 64px;
+    height: 64px;
+    /*background-color: rgb(104, 80, 29);*/
+    left: 288px;
+    top: 96px;
+}
+
+#doorWizardHut {
+    width: 32px;
+    height: 64px;
+    left: 704px;
+    top: 287px;
+}
+
+#well {
+    width: 64px;
+    height: 64px;
+    /*background-color: rgb(104, 80, 29);*/
+    left: 288px;
+    top: 96px;
+}
 
 #maincharacter {
     width: 32px;
@@ -95,10 +119,8 @@ body {
     /*background-color: #1e14da;*/
     left: 16px;
     top: 16px;
+    transition: all 1s ease-in-out;
 }
-
-
-/*#tileMap {}*/
 
 /*background/character/forground*/
 .background {
