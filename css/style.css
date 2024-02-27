@@ -36,6 +36,7 @@ body {
 }
 
 #setNameDialog {
+    position: relative;
     width: 800px;
     height: 64px;
     background-color: #5ba791;
