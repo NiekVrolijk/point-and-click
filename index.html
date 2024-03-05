@@ -4,66 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>point and click</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Protest+Riot&display=swap"
+        rel="stylesheet">
+
+    <title>point and click adventure</title>
 </head>
 
 <body>
     <div id="title">
-        <H1 id="mainTitle">point and click</H1>
+        <h1 id="mainTitle"></h1>
     </div>
+
     <div id="gameWindow">
-        <!--inventory-->
-        <div id="inventoryBox" class="forground">
+        <!--dialog bar-->
+        <div id="dialogBar" class="foreground">
+            <div id="setMainDialog">
+                <div id="mainCharacterAvatar" class="foreground">
+                    <img src="img/assets/assets/animated-character-1-idle.gif" alt="main character avatar">
+                </div>
+                <div id="mainCharacterSpeech" class="foreground speech-bubble">...</div>
+                <div id="counterSpeech" class="foreground speech-bubble">...</div>
+                <div id="counterAvatar" class="foreground">
+                    <img id="counterAvatarImg" src="img/assets/assets/animated-character-1-idle.gif"
+                        alt="counter avatar">
+                </div>
+                <div id="brownBar"></div>
+            </div>
+        </div>
+
+        <!-- inventory -->
+        <div id="inventoryBox" class="foreground">
+            <p>Inventory</p>
             <ul id="inventoryList">
 
             </ul>
 
         </div>
 
-        <!--dialog-->
-        <div id="dialogBox" class="forground">
-            <!--dialog box components-->
-            <div id="setNameDialog">
-                <div id="characterAvatar" class="forground">
-                    <img src="img/assets/assets/animated-character-1-idle.gif" alt="mainAvatar">
-                </div>
-                <div id="characterSpeach" class="forground">
+        <!--Foreground items-->
+        <div id="key1" class="foreground"></div>
+        <div id="door1" class="foreground"></div>
+        <div id="door2" class="foreground"></div>
 
-                </div>
-                <div id="counterSpeach" class="forground">
+        <div id="sign" class="foreground"></div>
+        <div id="statue" class="foreground"></div>
 
-                </div>
-                <div id="counterAvatar" class="forground">
-
-                </div>
-            </div>
+        <!--Main character-->
+        <div id="mainCharacter" class="heroCharacter">
+            <img id="mcImage" draggable="false" src="img/assets/assets/animated-character-1-idle.gif"
+                alt="main character">
         </div>
 
-        <!--forground-->
-        <!-- <div id="squareTest" class="forground">
-
-        </div> -->
-
-        <div id="key" class="forground"></div>
-
-        <div id="well" class="forground"></div>
-        <div id="doorWizardHut" class="forground"></div>
-        <div id="statue" class="forground"></div>
-
-        <!--mainCharacter-->
-        <div id="maincharacter" class="character">
-            <img src="img/assets/assets/animated-character-1-idle.gif" alt="" draggable="false" id="maincharacterImg">
+        <!--Background-->
+        <div id="tilemap" class="background">
+            <img src="img/background1.png" draggable="false" alt="tilemap level 1">
         </div>
-
-        <!--background-->
-        <div id="tileMap" class="background">
-            <img src="img/assets/assets/tilemap1.jpg" alt="" draggable="false">
-        </div>
-
     </div>
 
+    <!--<audio id="mcAudio">
+        <source src="audio" type="audio/mpeg">
+    </audio>
+    <audio id="cAudio">
+        <source src="audio" type="audio/mpeg">
+    </audio>-->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
-<script src="js/main.js"></script>
