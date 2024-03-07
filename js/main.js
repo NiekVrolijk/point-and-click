@@ -20,8 +20,8 @@ const offsetCharacter = 16;
 const mainCharacterSpeech = document.getElementById("mainCharacterSpeech");
 const counterSpeech = document.getElementById("counterSpeech");
 const counterAvatarImg = document.getElementById("counterAvatarImg");
-const mcAudio = document.getElementById("mcAudio");
-const cAudio = document.getElementById("cAudio");
+//const mcAudio = document.getElementById("mcAudio");
+//const cAudio = document.getElementById("cAudio");
 //Inventory
 const inventoryBox = document.getElementById("inventoryBox"); //div
 const inventoryList = document.getElementById("inventoryList"); //ul
@@ -80,9 +80,9 @@ gameWindow.onclick = function (e) {
         case "statue":
             showMessage(mainCharacterSpeech, mcAudio, "Wow cool statue..");
             setTimeout(function () { counterAvatarImg.style.opacity = 1; }, 4 * sec);
-            setTimeout(showMessage, 4 * sec, counterSpeech, cAudio, "I can talk you know..dummy");
-            setTimeout(showMessage, 8 * sec, mainCharacterSpeech, mcAudio, "You don't have to be so mean.");
-            setTimeout(showMessage, 12 * sec, counterSpeech, cAudio, "You should check the north house..");
+            setTimeout(showMessage, 4 * sec, counterSpeech, cAudio, "I am not a statue, I am a ghost. I just stand still");
+            setTimeout(showMessage, 8 * sec, mainCharacterSpeech, mcAudio, "Oh I'm sorry.");
+            setTimeout(showMessage, 12 * sec, counterSpeech, cAudio, "Its ok. You should look inside the slime");
             setTimeout(function () { counterAvatarImg.style.opacity = 0; }, 16 * sec);
             break;
 
