@@ -36,10 +36,15 @@ p {
 
 /*Main charcater*/
 #mainCharacter {
-    width: 32px;
-    height: 32px;
+    width: 64px;
+    height: 64px;
     left: 400px;
     top: 304px;
+}
+
+#mcImage {
+    width: 32px;
+    height: 32px;
 }
 
 /*Foreground Items*/
@@ -130,8 +135,8 @@ p {
 #mainCharacterAvatar {
     left: 0px;
     bottom: 0px;
-    width: 72px;
-    height: 68px;
+    width: 32px;
+    height: auto;
 }
 
 #mainCharacterSpeech {
