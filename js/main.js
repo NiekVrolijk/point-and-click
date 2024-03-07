@@ -43,7 +43,7 @@ gameWindow.onclick = function (e) {
     console.log(e.target.id);
     switch (e.target.id) {
 
-        case "door1":
+        case "slime":
             sign.style.opacity = 1;
             if (document.getElementById("key1") !== null) {
                 console.log('Found key!');
@@ -52,18 +52,30 @@ gameWindow.onclick = function (e) {
             }
 
             break;
-        case "door2":
+        case "chest":
             if (gameState.door2locked == true) {
                 // check if we have key
                 if (document.getElementById("inv-key") !== null) {
-                    //yes -> unlock door?
+                    //yes -> unlock chest?
                     gameState.door2locked = false;
                     changeInventory('key', 'delete');
                     console.log('Door unlocked!');
 
+                    if (document.getElementById("gem1") !== null) {
+                        console.log('Found gem!');
+                        document.getElementById("gem1").remove();
+                        changeInventory('gem', 'add');
+                    }
+
+                    showMessage(mainCharacterSpeech, mcAudio, "Omg what is this");
+                    setTimeout(function () { counterAvatarImg.style.opacity = 1; }, 4 * sec);
+                    setTimeout(showMessage, 4 * sec, counterSpeech, cAudio, "That is a very valuable gem stone");
+                    setTimeout(showMessage, 8 * sec, mainCharacterSpeech, mcAudio, "wait if you wanted me to find this. Couldn't you have given it to me?");
+                    setTimeout(showMessage, 12 * sec, counterSpeech, cAudio, "I am a ghost. I can't touch anything so I couldn't have.");
+                    setTimeout(function () { counterAvatarImg.style.opacity = 0; }, 16 * sec);
                 } else {
-                    //no -> alert 'door locked'
-                    alert("Door is locked!");
+                    //no -> alert 'chest locked'
+                    alert("Chest is locked!");
                 }
             } else {
                 console.log('enter building');

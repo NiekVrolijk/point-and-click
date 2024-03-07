@@ -43,7 +43,7 @@ p {
 }
 
 /*Foreground Items*/
-#door1 {
+#slime {
     width: 64px;
     height: 64px;
     /*background-color: #fb00ff;*/
@@ -52,10 +52,10 @@ p {
     left: 480px;
 }
 
-#door2 {
-    width: 44px;
+#chest {
+    width: 48px;
     height: 54px;
-    background-color: #fb00ff;
+    /*background-color: #fb00ff;*/
     top: 296px;
     left: 169px;
 }
@@ -69,10 +69,19 @@ p {
     left: 416px;
 }
 
+#gem1 {
+    width: 32px;
+    height: 32px;
+    /*background-color: #fffb00;*/
+    opacity: 1;
+    top: 166px;
+    left: 416px;
+}
+
 #sign {
     width: 64px;
     height: 32px;
-    background-color: #442c1c;
+    /*background-color: #442c1c;*/
     top: 450px;
     left: 10px;
 }
